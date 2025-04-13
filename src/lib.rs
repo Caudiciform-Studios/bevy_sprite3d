@@ -28,7 +28,6 @@ pub struct Sprite3dParams<'w, 's> {
     pub images        : ResMut<'w, Assets<Image>>,
     pub atlas_layouts : ResMut<'w, Assets<TextureAtlasLayout>>,
     pub caches        : ResMut<'w, Sprite3dCaches>,
-    #[system_param(ignore)]
     marker: PhantomData<&'s usize>,
 }
 
